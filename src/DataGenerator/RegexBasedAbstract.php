@@ -56,7 +56,7 @@ abstract class RegexBasedAbstract implements DataGenerator {
     }
 
     /**
-     * @param int
+     * @param int $count
      * @return int
      */
     private function computeChunkSize($count) {
@@ -65,7 +65,7 @@ abstract class RegexBasedAbstract implements DataGenerator {
     }
 
     /**
-     * @param mixed[]
+     * @param mixed[] $routeData
      * @return bool
      */
     private function isStaticRoute($routeData) {
@@ -112,7 +112,7 @@ abstract class RegexBasedAbstract implements DataGenerator {
     }
 
     /**
-     * @param mixed[]
+     * @param mixed[] $routeData
      * @return mixed[]
      */
     private function buildRegexForRoute($routeData) {
@@ -147,7 +147,7 @@ abstract class RegexBasedAbstract implements DataGenerator {
     }
 
     /**
-     * @param string
+     * @param string $regex
      * @return bool
      */
     private function regexHasCapturingGroups($regex) {
